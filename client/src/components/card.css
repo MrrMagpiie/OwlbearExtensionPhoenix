@@ -1,0 +1,16 @@
+.card {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 140px;
+  transform-origin: bottom center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* border-radius: 8px; */
+}
+
+.card.selected {
+  outline: 3px solid yellow;
+  transform: scale(1.05) translateY(-10px);
+  z-index: 0;
+}

@@ -1,0 +1,10 @@
+.hand-wrapper {
+  position: relative;
+  width: 300px;  /* Adjust as needed or make responsive */
+  height: 200px;
+  margin: auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
