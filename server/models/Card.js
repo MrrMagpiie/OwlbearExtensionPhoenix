@@ -9,6 +9,6 @@ const cardSchema = new mongoose.Schema({
     school : String,
 })
 const CardModel = mongoose.model('Card',cardSchema)
-export default {
+export {
     CardModel
 }

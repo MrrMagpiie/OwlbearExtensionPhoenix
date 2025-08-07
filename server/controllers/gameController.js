@@ -1,30 +1,34 @@
-import Game from '../models/Game.js';
+import {GameModel} from '../models/Game.js';
 
 async function getGameById(gameId){
     try {
-      const game = await Game.GameModel.findById(gameId)
-      if (!game) {
-        return {error: 'Game not Found'};
-      }
+      const game = await GameModel.findById(gameId)
       return game
     } catch (err){
-      console.error('Error fetching Game', err);
-      return { error: 'Something went wrong' };
+      throw new Error(`Error fetching game: ${er.message}`)
     }
 }
-async function upsertGame(gameData) {
+async function createGame(gameData) {
   try {
-    const game = new Game.GameModel(gameData);
-    const savedGame = await game.findOneAndUpdate({upsert:true});
+    const game = new GameModel(gameData);
+    const savedGame = await game.save();
     return savedGame;
   } catch (err) {
     throw new Error(`Failed to create game: ${err.message}`);
   }
 }
-
-
+async function updateGame(filter, update){
+  try{
+    const updatedGame = GameModel.findOneAndUpdate(filter, update, {new:true})  
+    return updatedGame  
+  }catch (err){
+    throw new Error(`Failed to update game: ${err.message}`)
+  }
+  
+}
 
 export default {
     getGameById,
-    upsertGame,
+    createGame,
+    updateGame
 };

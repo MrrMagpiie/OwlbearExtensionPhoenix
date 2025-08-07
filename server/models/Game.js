@@ -6,6 +6,6 @@ const gameSchema = new mongoose.Schema({
 
 })
 const GameModel = mongoose.model('Game',gameSchema)
-export default {
+export {
     GameModel
 }

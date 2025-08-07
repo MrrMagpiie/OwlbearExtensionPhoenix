@@ -5,6 +5,6 @@ const deckSchema = new mongoose.Schema({
     discard : [{type: mongoose.Schema.Types.ObjectId, ref: 'Card'}],
 })
 const DeckModel = mongoose.model('Deck',deckSchema)
-export default {
+export {
     DeckModel
 }

@@ -1,10 +1,10 @@
-import Card from '../models/Card.js';
+import {CardModel} from '../models/Card.js';
 import dotenv from "dotenv";
 dotenv.config({ path: "../../.env" });
 
-async function getCardById(cardId,req){
+async function getCardById(cardId){
     try {
-      const card = await Card.CardModel.findById(cardId)
+      const card = await CardModel.findById(cardId)
         if (!card) {
           return {error: 'Card not Found'};
         }
@@ -16,7 +16,7 @@ async function getCardById(cardId,req){
 }
 async function createCard(cardData) {
   try {
-    const card = new Card.CardModel(cardData);
+    const card = new CardModel(cardData);
     const savedCard = await card.save();
     return savedCard.name;
   } catch (err) {
