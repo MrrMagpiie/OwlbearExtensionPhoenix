@@ -1,69 +1,27 @@
-# React + TypeScript + Vite
+# End Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The final form of the project is a plugin to play an RPG call Phoenix: Dawn Command for my preferred virtual tabletop Owlbear Rodeo. 
 
-Currently, two official plugins are available:
+A virtual tabletop is an application that is intended to be used to run tabletop games such as boardgames or Tabletop RPG's (such as Dungeons and Dragon) in a digital environment to allow play over the internet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Owlbear Rodeo is a fairly stripped down option that give the use the ability to generate random numbers to simulate dice and a scene where the user can load in assets to act as game components. Owlbear Rodeo is fairly simple but it does allow users to create plugins that can extend the capabilities of the application.
+There is currently a plugin that adds decks of cards to the application however It doesn't support individual player hands and Its exceptionally buggy as each card is loaded in as an asset in the scene. This can lead to issues with actually using this decks plugin.
 
-## Expanding the ESLint configuration
+My application is broken down into three major components
+- Server
+- Database
+- Frontend Client Application
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The various logical components needed to play and load a game of Phoenix: Dawnguard on tabletop sim are stored In a MongoDB database and the server contains all logic to pass this data to the Clientside application through the Serverside logic
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The Database Stores:
+- Game: a document representing an Owlbear room running the plugin
+- Player: a document representing a particular user logged into a particular Game
+- Deck: a document representing the cards available to a Player in a Particular Game
+- Cards: a document representing the cards themselves
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+The Client:
+- Handles user inputs and game logic to allow users to play the game 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The Server:
+- Handles routing and server logic needed to interact with the database to facilitate whatever game actions the user is enacting
