@@ -25,3 +25,12 @@ The Client:
 
 The Server:
 - Handles routing and server logic needed to interact with the database to facilitate whatever game actions the user is enacting
+
+
+# How to use it
+
+- 'npm run start' in the main appplication dir will start the server going
+- in the terminal output you will see regular messages that say "🔗 add to Owkbear Rodeo extension with:" use that url to add the extention to owlbear and load it into a room like normal
+- if you're just running it locally than you can ignore the tunnul and just use http://localhost:5173/manifest.json
+- up in the top left you will see a bar wiht a few symbols in it, click on the one that looks like a triangle and it will open a panel
+- click draw and it will give you a hand of cards click then to add them to the current spread, click them again to remove them from the spread. 
