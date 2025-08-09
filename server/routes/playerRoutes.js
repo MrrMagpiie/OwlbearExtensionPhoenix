@@ -5,17 +5,18 @@ const router = express.Router();
 
 // Route: GET /api/players/:id
 router.get('/:id', async (req, res) => {
+  const {gameID} = req.body
   try{
-    const result = await controller.getPlayerById(req.params.id);
+    const result = await controller.getPlayerById(req.params.id,gameID);
     return res.status(200).json(result);
-  }catch{
+  }catch(err){
      return res.status(404).json({ error: err.message});
   }
 });
-router.post('/', async (req, res) => {
+router.post('/new', async (req, res) => {
   try {
-    const playerData = req.body;
-    const newplayer = await controller.createPlayer(playerData);
+    const {owlID,gameID} = req.body;
+    const newplayer = await controller.createPlayer(owlID,gameID);
     return res.status(201).json(newplayer);
   } catch (err) {
     return res.status(500).json({ error: err.message });
@@ -37,6 +38,15 @@ router.put('/:id/deck',async (req,res)=>{
     const update = req.body;
     const updatedDeck= await controller.updatePlayerDeck(owlID,update);
     return res.status(200).json(updatedDeck);
+    }catch (err){
+      return res.status(500).json({error: err.message})
+    }
+})
+router.get('/:id/deck',async (req,res)=>{
+  try{
+    const owlID = req.params.id;
+    const playerDeck= await controller.getPlayerDeck(owlID);
+    return res.status(200).json(playerDeck);
     }catch (err){
       return res.status(500).json({error: err.message})
     }

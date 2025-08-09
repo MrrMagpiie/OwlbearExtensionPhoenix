@@ -1,0 +1,41 @@
+.spread-wrapper {
+  position: relative;
+  width: 300px;  /* Adjust as needed or make responsive */
+  height: 200px;
+  margin: auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.assist-wrapper {
+  position: relative;
+  width: 300px;  /* Adjust as needed or make responsive */
+  height: 200px;
+  margin: auto;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.spread {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.spread-cards {
+  position: relative;
+  z-index: 2;
+
+}
+
+.assist-cards {
+  position: absolute;
+  bottom: 30px; /* move slightly behind */
+  z-index: 1;
+  opacity: 0.8;
+}

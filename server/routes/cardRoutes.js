@@ -5,13 +5,13 @@ const router = express.Router();
 
 // Route: GET /api/cards/:id
 router.get('/:id', async (req, res) => {
+  try{
   const result = await controller.getCardById(req.params.id);
-
-  if (result.error) {
-    return res.status(404).json({ error: result.error });
+  return res.status(200).json(result);
+  }catch(err){
+    return res.status(404).json({ error: err.message });
   }
-
-  res.json(result);
+  
 });
 router.post('/', async (req, res) => {
   try {

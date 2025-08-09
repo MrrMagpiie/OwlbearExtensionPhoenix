@@ -9,11 +9,16 @@ async function getDeckById(deckId){
     }
 }
 
-async function createDeck(deckData) {
+async function createDeck() {
   try {
+    let deckData = {
+        'hand' : [],
+        'draw' : ['688cf71ec9c00c98ff5d862d','688cf71ec9c00c98ff5d862e','688cf71ec9c00c98ff5d8630','688cf71ec9c00c98ff5d862f','688cf71ec9c00c98ff5d862f','688cf71ec9c00c98ff5d8630','688cf71ec9c00c98ff5d862e','688cf71ec9c00c98ff5d862d'],
+        'discard' : [],
+    }
     const deck = new DeckModel(deckData);
     const savedDeck = await deck.save();
-    return savedDeck.id; 
+    return savedDeck._id; 
   } catch (err) {
     throw new Error(`Failed to create deck: ${err.message}`);
   }
@@ -22,7 +27,11 @@ async function createDeck(deckData) {
 async function updateDeck(deckId,update){
   try {
     const updatedDeck = await DeckModel.findOneAndUpdate(deckId,update,{new:true});
-    return updatedDeck;
+    if (updateDeck==null){
+      throw new Error(`Deck Does not exist`)
+    }else{
+      return updatedDeck;
+    }
   }catch (err){
     throw new Error(`Failed to update deck: ${err.message}`)
   }

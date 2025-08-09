@@ -15,10 +15,12 @@ import "./card.css"; // local styles
 }
 
  export type CardDisplayProps = {
+    index? : number;
     selected? : boolean;
     onClick?: () => void;
     className?: string;
     flipped?: boolean;
+    hover?:boolean;
 }
 
 export type CardProps = {
@@ -27,15 +29,14 @@ export type CardProps = {
 }
 
 export function Card({data, display}: CardProps) {
-  const {face,back,name} = data
-  const {flipped=false,onClick,selected=false,className=''} = display
+  let {face,back,name} = data
+  let {flipped=false,onClick,selected=false,className='',hover} = display
    
   return (
     <img
       src={flipped ? back : face}
       alt={name}
-      className={`card ${selected ? "selected" : ""} ${className}`}
-      onClick={onClick}
+      className={`card ${selected ? "selected" : ""} ${hover ? "hovered" : ""}`}
     />
   );
 }

@@ -15,8 +15,7 @@ router.get('/:id', async (req, res) => {
 });
 router.post('/', async (req, res) => {
   try {
-    const gameData = req.body;
-    const newgame = await controller.createGameGame(gameData);
+    const newgame = await controller.createGame();
     return res.status(201).json(newgame);
   } catch (err) {
     return res.status(500).json({ error: err.message });
@@ -32,5 +31,14 @@ router.put('/:id', async (req,res) =>{
     return res.status(500).json({error: err.message})
   }
 });
-
+router.put('/:id/player',async (req,res) =>{
+  try {
+    const gameID = req.params.id;
+    const playerID = req.body.playerID
+    const updatedGame = await controller.updatePlayersList(gameID,playerID)
+    return res.status(200).json(updatedGame);
+  }catch(err){
+    return res.status(500).json({error: err.message})
+  }
+})
 export default router;

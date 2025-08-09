@@ -1,10 +1,18 @@
 .hand-wrapper {
   position: relative;
-  width: 300px;  /* Adjust as needed or make responsive */
-  height: 200px;
   margin: auto;
   perspective: 1000px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.card-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 140px;
+  transform-origin: bottom center;
+  transition: transform 0.2s ease;
+  /* border-radius: 8px; */
 }

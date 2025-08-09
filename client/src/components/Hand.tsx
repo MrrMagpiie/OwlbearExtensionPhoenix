@@ -1,72 +1,103 @@
 // Hand.tsx
-import {useEffect, useState} from "react";
+import {useEffect, useState,useRef} from "react";
 import "./hand.css";
-import {Card, type CardProps} from './Card';
+import {Card, type CardDataProps, type CardProps,} from './Card';
 
 
 type HandProps ={
-  cards: CardProps[]
+  cards: CardDataProps[];
+  onCardClick: (id: number, out?:boolean,name?:string) => void;
 }
 
-export function Hand({cards} : HandProps) {
+export function Hand({cards, onCardClick} : HandProps) {
   const [handCards, setCards] = useState<CardProps[]>([])
-
-  const toggleCard = (id: string) => {
-    setCards((prev) =>
-      prev.map((card) =>
-        card.data._id === id ? { ...card, selected: !card.display.selected } : card
-      )
-    );
-  };
+  const selectedIndex = useRef<any[]>([])
   
-  useEffect(()=>{
-    setCards(cards)
-  },[])
-
-  useEffect(()=>{
-    setCards(prev =>
-    prev.map(card => ({
-      ...card,
-      display: {
-        ...card.display,
-        onClick: () => toggleCard(card.data._id),
-      },
-    }))
+const toggleCard = (index: number) => {
+  setCards(prevCards =>
+    prevCards.map((card, i) =>
+      i === index
+        ? {
+            ...card,
+            display: {
+              ...card.display,
+              selected: !card.display.selected,
+            },
+          }
+        : card
+    )
   );
-  console.log(handCards)
-  },[cards]);
+  console.log(index)
+  console.log(selectedIndex.current)
+  console.log(index+handCards[index].data._id)
+  const key = `${index}${handCards[index].data._id}`
+  console.log(key)
+  if(selectedIndex.current.includes(key)){
+    console.log('is in')
+    const remove = selectedIndex.current.findIndex(item => item === key);
+        if (remove !== -1) {
+        selectedIndex.current.splice(remove, 1);
+        }
+    onCardClick(index,true,handCards[index].data._id)
+    
+  }else{
+    console.log('not in')
+    onCardClick(index)
+    selectedIndex.current.push(key)
+  }
+};
+const setHover = (index: number, value: boolean) => {
+  setCards(prevCards =>
+    prevCards.map((card, i) =>
+      i === index
+        ? {
+            ...card,
+            display: {
+              ...card.display,
+              hover: value,
+            },
+          }
+        : card
+    )
+  );
+};
+const showHand = () => {
+  return handCards.map((card, index) => {
+    const offset = (index - 2) * 70;
+    const className=`card-wrapper ${card.display.selected ? "selected" : ""} ${card.display.hover ? "hovered" : ""}`;
+
+    return (
+      <div
+        key={index}
+        onClick={() => toggleCard(index)}
+        className={className}
+        style={{ transform: `translateX(${offset}px)`}}
+        onMouseEnter={() => setHover(index, true)}
+        onMouseLeave={() => setHover(index, false)}
+      >
+        <Card data={card.data} display={card.display} />
+      </div>
+    );
+  });
+};
+  useEffect(()=>{
+      let displaycards = cards.map((card,index) =>
+        ({ data: card,
+          display:{
+            index: index,
+            selected: false,
+            onClick: () => toggleCard(index),
+            hover: false
+          }
+        })
+      )
+      console.log(displaycards)
+      setCards(displaycards)
+    },[cards])
 
   return (
-    <div className="hand-wrapper"
-        style={{border:`1px dashed yellow`}}
-          >
-      {handCards.map((card, index) => {
-        console.log(card)
-        const offset = (index-3)*60;
-
-        return (
-          <div
-            key={index}
-            className="card-wrapper"
-            style={{transform:`translateX(${offset}px)`,border:`1px solid blue`}}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = `translateY(-40px) scale(1.2) translateX(${offset}px)`;
-              e.currentTarget.style.transition = `transition: transform 0.2s ease;`;
-              e.currentTarget.style.zIndex = "10";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = `translateY(0px) scale(1) translateX(${offset}px)`;
-              e.currentTarget.style.transition = `transition: transform 0.2s ease;`;
-              e.currentTarget.style.zIndex = `${index}`;
-            }}
-          >
-            <Card
-            data = {card.data}
-            display = {card.display}
-            />
-          </div>
-        );
-      })}
+    <div className="hand-wrapper">
+      {showHand()}
     </div>
   );
 }
