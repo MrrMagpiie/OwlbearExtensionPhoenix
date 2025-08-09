@@ -1,0 +1,2342 @@
+[
+    {
+        "name": "Ancient Bones",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Attendants",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Barrow Lord",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Behemoth",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bladestorm",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bone Champion",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bone Chariots",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bone Legion",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bone Sappers",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Carrion Birds",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Chanter Mob",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Crystal Swarm",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Curse Ewer",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dreadknight",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dreadlord",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Durant Phoenix",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hollow",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "House God",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Ichtryo",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Imperial Soldiers",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Innocents",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Mercy",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Omen",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Psycopomp",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Reaver",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Risen Dead",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shoggoth",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "The Harvester",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "The Puppeteer",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "War Wyrm",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Whisperer",
+        "school": "Common",
+        "rank": "0",
+        "type": "Challenge",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bitter School",
+        "school": "Bitter",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Strength & Shadow",
+        "school": "Bitter",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Reaper's Fury",
+        "school": "Bitter",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bitter Strength",
+        "school": "Bitter",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bitter Bond",
+        "school": "Bitter",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Endless Rage",
+        "school": "Bitter",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hunted Predator",
+        "school": "Bitter",
+        "rank": "2",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Savage Might",
+        "school": "Bitter",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Lingering Fear",
+        "school": "Bitter",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Tenacious Blood",
+        "school": "Bitter",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vigor Mortis",
+        "school": "Bitter",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Blood Binding",
+        "school": "Bitter",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vampiric Thirst/Hand of Mourning",
+        "school": "Bitter",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Heart of Shadow/Bloody Blade",
+        "school": "Bitter",
+        "rank": "6",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Final Vengeance/Ash Plague",
+        "school": "Bitter",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Devoted School",
+        "school": "Devoted",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Spiritual Guidance",
+        "school": "Devoted",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Passing Pain",
+        "school": "Devoted",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shared Strength",
+        "school": "Devoted",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Devoted Bond",
+        "school": "Devoted",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shining Mirror",
+        "school": "Devoted",
+        "rank": "1",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Blessing of Vigor",
+        "school": "Devoted",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Painbearer",
+        "school": "Devoted",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Twist of Fate",
+        "school": "Devoted",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Woundbinding",
+        "school": "Devoted",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dawn's Touch",
+        "school": "Devoted",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hand of The Wing",
+        "school": "Devoted",
+        "rank": "4",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Symbol of Sanctuary/Cleansing Flame",
+        "school": "Devoted",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Light of Inspiration/Gift of the Phoenix",
+        "school": "Devoted",
+        "rank": "6",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Font of Life/Ultimate Sacrifice",
+        "school": "Devoted",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Durant School",
+        "school": "Durant",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master of War",
+        "school": "Durant",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Durant Steel",
+        "school": "Durant",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Unyielding Might",
+        "school": "Durant",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Durant Bond",
+        "school": "Durant",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Paragon",
+        "school": "Durant",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Impenetrable Hide",
+        "school": "Durant",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vanguard",
+        "school": "Durant",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Guardian Spirit/Guardian Spirit",
+        "school": "Durant",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Tactical Genius",
+        "school": "Durant",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Stone Ram/Stone Ram",
+        "school": "Durant",
+        "rank": "4",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Reprimand",
+        "school": "Durant",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Turn the Tide/Bulwark of the Dawn",
+        "school": "Durant",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Pyrean Guard/Guiding Hand",
+        "school": "Durant",
+        "rank": "6",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Phoenix Commander",
+        "school": "Durant",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Elemental School",
+        "school": "Elemental",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master of the Arcane",
+        "school": "Elemental",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Fire Shaping",
+        "school": "Elemental",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Fire and Blood",
+        "school": "Elemental",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Elemental Bond",
+        "school": "Elemental",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Firestarter",
+        "school": "Elemental",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Frostbite",
+        "school": "Elemental",
+        "rank": "2",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shield of Flames",
+        "school": "Elemental",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bound to the Flame",
+        "school": "Elemental",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Radiant Blood",
+        "school": "Elemental",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Lightning Demon",
+        "school": "Elemental",
+        "rank": "4",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Well of Power",
+        "school": "Elemental",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Lingering Power/Explosive Wrath",
+        "school": "Elemental",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master of Storms/Rain of Destruction",
+        "school": "Elemental",
+        "rank": "6",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Keeper of the Flame/Final Flame",
+        "school": "Elemental",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Forceful School",
+        "school": "Forceful",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master of Motion",
+        "school": "Forceful",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Flowing Force",
+        "school": "Forceful",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Uncanny Agility",
+        "school": "Forceful",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Forceful Bond",
+        "school": "Forceful",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Percussive Strikes",
+        "school": "Forceful",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Living Whirlwind",
+        "school": "Forceful",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Quick Study",
+        "school": "Forceful",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dancing Crane",
+        "school": "Forceful",
+        "rank": "3",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Rolling Stone",
+        "school": "Forceful",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Evolving Defense",
+        "school": "Forceful",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Perfect Reflexes",
+        "school": "Forceful",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Arrow's Flight/Harrying Shrike",
+        "school": "Forceful",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Perfect Scout/Furious Storm",
+        "school": "Forceful",
+        "rank": "6",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Zephyr Blessing/Final Moment",
+        "school": "Forceful",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shrouded School",
+        "school": "Shrouded",
+        "rank": "0",
+        "type": "School",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master of Intrique",
+        "school": "Shrouded",
+        "rank": "0",
+        "type": "Skill Specialties",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Cryptic Blade",
+        "school": "Shrouded",
+        "rank": "0",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hidden Secrets",
+        "school": "Shrouded",
+        "rank": "0",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shadow Dancer",
+        "school": "Shrouded",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shrouded Bond",
+        "school": "Shrouded",
+        "rank": "1",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Borrowed Memories",
+        "school": "Shrouded",
+        "rank": "2",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shadow Knife",
+        "school": "Shrouded",
+        "rank": "2",
+        "type": "Combat Style",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Rune Ink",
+        "school": "Shrouded",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Soon Forgotten",
+        "school": "Shrouded",
+        "rank": "3",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Heightened Awareness",
+        "school": "Shrouded",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Walking in Dusk",
+        "school": "Shrouded",
+        "rank": "4",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Choose Futures/Corrosive Knowledge",
+        "school": "Shrouded",
+        "rank": "5",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Web of Secrets/Sinister Brand",
+        "school": "Shrouded",
+        "rank": "6",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Final Destiny/Shroud of the Phoenix",
+        "school": "Shrouded",
+        "rank": "7",
+        "type": "Talent",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bastion",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dreamshadow",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Epitaph",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Grimclaw",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Thoughtcoil",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Valoria",
+        "school": "Common",
+        "rank": "2",
+        "type": "Talon",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Reckless",
+        "school": "Bitter",
+        "rank": "1",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Ruthless",
+        "school": "Bitter",
+        "rank": "1",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Bloodthirsty",
+        "school": "Bitter",
+        "rank": "3",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Power From Pain",
+        "school": "Bitter",
+        "rank": "3",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Siphon Strength",
+        "school": "Bitter",
+        "rank": "5",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Feed On Fear",
+        "school": "Bitter",
+        "rank": "5",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vendetta",
+        "school": "Bitter",
+        "rank": "7",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Pestilent Strength",
+        "school": "Bitter",
+        "rank": "7",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Heart of the Wing",
+        "school": "Devoted",
+        "rank": "1",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Savior",
+        "school": "Devoted",
+        "rank": "1",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Moment of Compassion",
+        "school": "Devoted",
+        "rank": "3",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Sunspear",
+        "school": "Devoted",
+        "rank": "3",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Exorcist",
+        "school": "Devoted",
+        "rank": "5",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Guiding Spirit",
+        "school": "Devoted",
+        "rank": "5",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Guiding Light",
+        "school": "Devoted",
+        "rank": "7",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dawn's Blessing",
+        "school": "Devoted",
+        "rank": "7",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Skin of Steel",
+        "school": "Durant",
+        "rank": "1",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Valiant",
+        "school": "Durant",
+        "rank": "1",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Phoenix Shield",
+        "school": "Durant",
+        "rank": "3",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shrug It Off",
+        "school": "Durant",
+        "rank": "3",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Heart of Fire",
+        "school": "Durant",
+        "rank": "5",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Surge of Strength",
+        "school": "Durant",
+        "rank": "5",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Perfect Guard",
+        "school": "Durant",
+        "rank": "7",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Tireless Champion",
+        "school": "Durant",
+        "rank": "7",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Call Lightning",
+        "school": "Elemental",
+        "rank": "1",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Pyromancer",
+        "school": "Elemental",
+        "rank": "1",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Consume Heat",
+        "school": "Elemental",
+        "rank": "3",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Incinerate",
+        "school": "Elemental",
+        "rank": "3",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Dire Flame",
+        "school": "Elemental",
+        "rank": "5",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vengeful Lightning",
+        "school": "Elemental",
+        "rank": "5",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Consuming Force",
+        "school": "Elemental",
+        "rank": "7",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Imperial Flame",
+        "school": "Elemental",
+        "rank": "7",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Blur of Motion",
+        "school": "Forceful",
+        "rank": "1",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Thunder Strike",
+        "school": "Forceful",
+        "rank": "1",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Intense Focus",
+        "school": "Forceful",
+        "rank": "3",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Perfect Timing",
+        "school": "Forceful",
+        "rank": "3",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Absolute Precision",
+        "school": "Forceful",
+        "rank": "5",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Tend Handed Strike",
+        "school": "Forceful",
+        "rank": "5",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Focused Spirit",
+        "school": "Forceful",
+        "rank": "7",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Speed of the Flame",
+        "school": "Forceful",
+        "rank": "7",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hidden Motion",
+        "school": "Shrouded",
+        "rank": "1",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Psychometry",
+        "school": "Shrouded",
+        "rank": "1",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Anticipate",
+        "school": "Shrouded",
+        "rank": "3",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Mind Trick",
+        "school": "Shrouded",
+        "rank": "3",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Painful Truth",
+        "school": "Shrouded",
+        "rank": "5",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Perfect Deception",
+        "school": "Shrouded",
+        "rank": "5",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Always Prepared",
+        "school": "Shrouded",
+        "rank": "7",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Fading Memory",
+        "school": "Shrouded",
+        "rank": "7",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Astonishing Luck",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Charming",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Commander",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Hunter",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Inspiring",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Killer Instincts",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Makes It Look Easy",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Misspent Youth",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Noble",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Small & Quick",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Sneaky",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Superhuman Reflexes",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Untouchable",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Vengeful",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Kandari Blood Curse",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Last Stand/Phoenix Commander",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Disturbing Insights",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Favored By Fate",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Grim Determination",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Heroic",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Horrific Vision",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Memories of the Chant",
+        "school": "Common",
+        "rank": "9",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "2 of Grace",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "3 of Grace",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "4 of Grace",
+        "school": "Common",
+        "rank": "0",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "5 of Grace",
+        "school": "Common",
+        "rank": "1",
+        "type": "Grace",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Brilliant Deduction",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Cursed",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Extensive Training",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Intuitive",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Master Plan",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Mysterious",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Resourceful",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Seen This Before",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Shaman",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Smartest Person In The Room",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Supernatural Senses",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Warlock",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "2 of Intellect",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "3 of Intellect",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "4 of Intellect",
+        "school": "Common",
+        "rank": "0",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "5 of Intellect",
+        "school": "Common",
+        "rank": "1",
+        "type": "Intellect",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Absolute Conviction",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Astonishing Endurance",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Crude But Effective",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Death Wish",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Furious",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Never Gives Up",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Seasoned Veteran",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Superhuman Strength",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Survivor",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Terrifying",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Too Big To Fail",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Tough As Nails",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "2 of Strength",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "3 of Strength",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "4 of Strength",
+        "school": "Common",
+        "rank": "0",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "5 of Strength",
+        "school": "Common",
+        "rank": "1",
+        "type": "Strength",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    },
+    {
+        "name": "Affliction",
+        "school": "Common",
+        "rank": "0",
+        "type": "Affliction",
+        "value": "0",
+        "face": "",
+        "back": "",
+        "effect":""
+    }
+]
