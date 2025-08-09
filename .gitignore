@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+#environment files
+.env
+
 # ignore the card images
 client/public/cards
