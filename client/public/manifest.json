@@ -1,9 +1,9 @@
 {
-  "name": "Hello, World!",
+  "name": "Phoenix: Dawn Command",
   "version": "1.0.0",
   "manifest_version": 1,
   "action": {
-    "title": "Hello, World!",
+    "title": "Phoenix",
     "icon": "/vite.svg",
     "popover": "/",
     "height": 600,

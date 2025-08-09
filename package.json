@@ -1,0 +1,35 @@
+{
+  "name": "owlbearextensionphoenix",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "version": "1.0.0",
+  "description": "a plugin to play an RPG call Phoenix: Dawn Command for Owlbear Rodeo.",
+  "scripts": {
+    "runTunnel": "node scripts/runTunnel.js",
+    "start:client": "npm run dev --workspace=client",
+    "start:server": "npm run dev --workspace=server",
+    "start": "npm run runTunnel && concurrently \"npm run start:client\" \"npm run start:server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrrMagpiie/OwlbearExtensionPhoenix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrrMagpiie/OwlbearExtensionPhoenix/issues"
+  },
+  "homepage": "https://github.com/MrrMagpiie/OwlbearExtensionPhoenix#readme",
+  "dependencies": {
+    "cloudflared": "^0.7.1"
+  },
+  "type":"module"
+}

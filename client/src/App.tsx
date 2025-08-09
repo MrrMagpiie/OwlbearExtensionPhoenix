@@ -13,54 +13,6 @@ import {Spread, type SpreadProps} from './components/Spread'
 
 const appId = "com.my-extension.phoenix/metadata";
 
-const DBCards =[
-  {_id : '1',
-    type : 'type',
-    name : 'name',
-    face : '/cards/sheet1_card_0_0.jpg',
-    back : '/cards/sheet1_card_0_0.jpg',
-    value : 1,
-    effect : 'effect',
-    school : 'school',
-  },
-  {_id : '1',
-    type : 'type',
-    name : 'name',
-    face : '/cards/sheet1_card_0_0.jpg',
-    back : '/cards/sheet1_card_0_0.jpg',
-    value : 1,
-    effect : 'effect',
-    school : 'school',
-  },
-  {_id : '1',
-    type : 'type',
-    name : 'name',
-    face : '/cards/sheet1_card_0_0.jpg',
-    back : '/cards/sheet1_card_0_0.jpg',
-    value : 1,
-    effect : 'effect',
-    school : 'school',
-  },
-  {_id : '1',
-    type : 'type',
-    name : 'name',
-    face : '/cards/sheet1_card_0_0.jpg',
-    back : '/cards/sheet1_card_0_0.jpg',
-    value : 1,
-    effect : 'effect',
-    school : 'school',
-  },
-  {_id : '1',
-    type : 'type',
-    name : 'name',
-    face : '/cards/sheet1_card_0_0.jpg',
-    back : '/cards/sheet1_card_0_0.jpg',
-    value : 1,
-    effect : 'effect',
-    school : 'school',
-  }
-]
-
 function App() {
   //subscribe to the room metadata
   const {metadata,startup,displayMetadata} = useOBRMetadata()

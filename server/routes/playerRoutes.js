@@ -28,7 +28,7 @@ router.put('/:id',async (req, res)=>{
     const update = req.body;
     const updatedPlayer = await controller.updatePlayer(owlID,update)
     return res.status(201).json(updatedPlayer)
-  }catch{
+  }catch(err){
     return res.status(500).json({error: err.message})
   }
 })

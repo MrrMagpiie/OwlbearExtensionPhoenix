@@ -1,11 +1,9 @@
 // Split cards from sheets
-import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
-import models from '../models/index';
-import cardData from '../assets/cards-csv.json'
+import models from '../models/index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const data = await Promise.all([fs.promises.readFile(path.join(__dirname,'../assets/cards-csv.json'), 'utf-8'),]);
@@ -14,6 +12,7 @@ const db = JSON.parse(data)
 
 
 export async function seedData(MONGO_URI) {
+  console.log('seeding database data')
   try {
     await mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
     //clear old data if there is any
@@ -24,7 +23,7 @@ export async function seedData(MONGO_URI) {
 
     // Insert card data
     await models.Card.insertMany(
-      cardData
+      db
     );
 
     console.log('Database seeded successfully');
