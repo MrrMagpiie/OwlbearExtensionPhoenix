@@ -1,7 +1,13 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background: #2a2a2a;
+  position: relative;
+  padding: 0;
+}
+
 .spread-wrapper {
   position: relative;
-  width: 300px;  /* Adjust as needed or make responsive */
-  height: 200px;
   margin: auto;
   perspective: 1000px;
   display: flex;
@@ -11,8 +17,6 @@
 
 .assist-wrapper {
   position: relative;
-  width: 300px;  /* Adjust as needed or make responsive */
-  height: 200px;
   margin: auto;
   perspective: 1000px;
   display: flex;
@@ -20,22 +24,15 @@
   align-items: flex-end;
 }
 
-.spread {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.spread-cards {
+.spread-card {
   position: relative;
   z-index: 2;
 
 }
 
-.assist-cards {
+.assist-card {
   position: absolute;
-  bottom: 30px; /* move slightly behind */
+  bottom: 30px; 
   z-index: 1;
   opacity: 0.8;
 }

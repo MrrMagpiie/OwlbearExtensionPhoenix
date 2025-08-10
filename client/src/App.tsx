@@ -7,11 +7,12 @@ import { useDatabase } from './hooks/useDatabase'
 import {useOBRMetadata, isMetadata, setOBRMetadata, type metadata} from './hooks/useOBRMetadata'
 
 //component imports
-import { Hand } from './components/Hand'
-import {type CardProps,type CardDataProps} from './components/Card'
+import { Hand, type handRef } from './components/Hand'
+import {type CardProps,type CardDataProps, isCardDataProps,isCardDisplayProps,isCardProps} from './components/Card'
 import {Spread, type SpreadProps} from './components/Spread'
-
+import {Valuecomponent} from './components/Valuecomponent'
 const appId = "com.my-extension.phoenix/metadata";
+
 
 function App() {
   //subscribe to the room metadata
@@ -19,7 +20,7 @@ function App() {
   const player = useRef('')
   const deckRef = useRef<{ hand: any[]; draw: any[]; discard: any[] }>({ hand: [], draw: [], discard: [] });
   const spreadRef = useRef<{owner:string,cards:any[],assist:{[key: string]: any[];}}>({owner:'',cards:[],assist:{}})
-
+  const handRenderRef = useRef<(string|CardProps|null)[]> ([''])
 
   //initialization Checkers
   const gameInit = useRef(false);
@@ -27,11 +28,15 @@ function App() {
   const playerInit = useRef(false);
 
   // display States
-  const [hand, setHand] = useState<CardDataProps[]>([]);
+  const [hand, setHand] = useState<CardProps[]>([]);
   const [spread, setSpread] = useState<SpreadProps>({owner:'',assist:{},cards:[]});
-
-  console.log(metadata.current)
+  const [actionHeight, setHeightState] = useState<number>(0);
+  const [actionWidth, setWidthState] = useState<number>(0);
+  const [displayValue, setSpreadValue] = useState<number>(0);
+  const [handResetTrigger, triggerReset] =useState<boolean>(false);
   
+
+  // init functions
   const Init = async () => {
       let leave = OBR.onReady( async ()=>{
         await startMetadata()
@@ -41,12 +46,18 @@ function App() {
       })
   }
   const getDeck = async () =>{
-    let deck:any = await useDatabase.getPlayerDeck(player.current)
-    if(deck.ok) deck = await deck.json()
-    deckRef.current = deck
-    console.log(deckRef.current)
-    let showCards:any[] = await renderCards(deckRef.current.hand)
-    setHand(showCards)
+    let deck:Response = await useDatabase.getPlayerDeck(player.current)
+    if(deck.ok){
+      let deckJson:any = await deck.json()
+      deckRef.current = deckJson
+    }
+    console.log('deck init',deckRef.current)
+    handRenderRef.current = deckRef.current.hand
+    await renderCards()
+    for(let index in handRenderRef.current)
+    if(isCardProps(handRenderRef.current[index])){
+      hand.push(handRenderRef.current[index])
+    }
   }
   const playerJoin = async () => {
     let playerId = await OBR.player.getId()
@@ -64,11 +75,13 @@ function App() {
         let updateList = await useDatabase.updatePlayerList(metadata.current.id,{playerID:player.current})
         if (updateList.ok) playerInit.current=true
       }
+      console.log('player init')
   }
   const startMetadata = async ()=>{
     await startup()
     metadataInit.current=true
     spreadRef.current=metadata.current.spread
+    console.log('Metadata init')
   }
   const createGame = async () =>{
     try {
@@ -94,87 +107,157 @@ function App() {
             }
           }
           gameInit.current=true
+          console.log('game init')
         }
     } catch (err:any) {
       console.error(`Failed to initialize room: ${err}`)
     }
+    
   }
-  const renderCards = async (cards:any[]) =>{
-    let renderedCards:any[] = []
-    for (let card of cards){
-      let cardData:any = await useDatabase.getCard(card)
+
+// rendering functins
+  const renderCards = async () =>{
+    for (let index in handRenderRef.current){
+      if (typeof handRenderRef.current[index] == 'string'){
+        let card = handRenderRef.current[index]
+        let cardData:Response = await useDatabase.getCard(card)
+        let display = {
+              index: index,
+              selected: false,
+              hover: false
+            }
+      
       if(cardData.ok){ 
         let jsonCardData = await cardData.json()
-        jsonCardData.face = '/cards/'+jsonCardData.face
-        jsonCardData.back = '/cards/'+jsonCardData.back
-        renderedCards.push(jsonCardData)
+        if (isCardDataProps(jsonCardData) && isCardDisplayProps(display)){
+          jsonCardData.face = '/cards/'+jsonCardData.face
+          jsonCardData.back = '/cards/'+jsonCardData.back
+          let newCard = {
+          data:jsonCardData,
+          display
+          }
+        handRenderRef.current[index] = newCard
+        } 
       }
     }
-    return renderedCards
   }
-  const drawCards = async () =>{
-      deckRef.current.discard.push(...deckRef.current.hand)
-      deckRef.current.hand = []
-    do{
-      //check if empty
-      if (deckRef.current.draw.length == 0){
+}
+  const toggleCard = (index: number) => {
+  setHand(prevCards =>
+    prevCards.map((card, i) =>
+      i === index
+        ? {
+            ...card,
+            display: {
+              ...card.display,
+              selected: !card.display.selected,
+            },
+          }
+        : card
+    )
+  );
+    if (hand[index].display.selected){
+      console.log('out')
+      changeSreadOnClick(index,true,hand[index].data._id)
+      
+    }else{
+      console.log('in')
+      changeSreadOnClick(index)
+
+    }
+  }
+
+// gameplay functions
+  const discard = async (index:number) =>{
+    handRenderRef.current = hand
+    deckRef.current.discard.push(deckRef.current.hand[index])
+    deckRef.current.hand.splice(index,1)
+    handRenderRef.current = handRenderRef.current.map((item,i)=>
+      i === index ? '' : item
+    )
+  }
+  const draw = async () =>{
+    if (deckRef.current.draw.length == 0){
         deckRef.current.draw = deckRef.current.discard
         deckRef.current.discard = []
       }
-      //draw random card 
+      handRenderRef.current = hand
       let randomIndex = Math.floor(Math.random() * deckRef.current.draw.length);
       deckRef.current.hand.push(deckRef.current.draw[randomIndex])
+      let replace = false
+      for(let each in handRenderRef.current){
+        if (typeof handRenderRef.current[each] == 'string'){
+          handRenderRef.current[each] = deckRef.current.draw[randomIndex]
+          replace = true
+        }
+      } if (!replace){
+        handRenderRef.current.push(deckRef.current.draw[randomIndex])
+      }
       deckRef.current.draw.splice(randomIndex, 1)
-    }while(deckRef.current.hand.length < 5)
-    let showCards:any[] = await renderCards(deckRef.current.hand)
-    setHand(showCards)
-    await useDatabase.updatePlayerDeck(player.current,deckRef.current)
   }
-  const addToSPread = async (index:number,out:boolean=false,name?:string) =>{
+  const discardSelected = async () => {
+    for (let i = hand.length - 1; i >= 0; i--) {
+      console.log(i)
+      console.log(hand[i])
+      const card = hand[i];
+      if (card.display.selected) {
+        toggleCard(i)
+        discard(i);
+      }
+    }
+    updateDeck();
+  };
+  const drawCards = async (cards:number = 5) =>{
+    do{draw()
+      cards = cards-1
+    }while(cards >0)
+    updateDeck()
+  }
+  const changeSreadOnClick = async (index:number,out:boolean=false,name?:string) =>{
     spreadRef.current=metadata.current.spread
     let outSpread:SpreadProps=spreadRef.current
     if(!out){
-    if (outSpread.owner == ''){
-      outSpread.owner = player.current
-      outSpread.cards.push(hand[index])
-      spreadRef.current = outSpread
-      setSpread(spreadRef.current)
-    }else if(outSpread.owner == player.current){
-      outSpread.cards.push(hand[index])
-      spreadRef.current=outSpread
-      setSpread(spreadRef.current)
-    }else if(spreadRef.current.owner != player.current){
-      if (player.current in outSpread.assist){
-      outSpread.assist[player.current].push(hand[index])
-      }else{
-        outSpread.assist[player.current] = [hand[index]]
-      }
-      spreadRef.current=outSpread
-      setSpread(spreadRef.current)
-    }
-  }else{
-    if (outSpread.owner == ''){
-      return //not sure what to do here
-    }else if(outSpread.owner == player.current){
-      const index = outSpread.cards.findIndex(item => item._id === name);
-      if (index !== -1) {
-      outSpread.cards.splice(index, 1); // removes exactly one item
-      }
-    }else if(spreadRef.current.owner != player.current){
-      if (player.current in outSpread.assist){
-        const index = outSpread.assist[player.current].findIndex(item => item._id === name);
-        if (index !== -1) {
-        outSpread.assist[player.current].splice(index, 1);
+      if (outSpread.owner == ''){
+        outSpread.owner = player.current
+        outSpread.cards.push(hand[index])
+        spreadRef.current = outSpread
+        setSpread(spreadRef.current)
+      }else if(outSpread.owner == player.current){
+        outSpread.cards.push(hand[index])
+        spreadRef.current=outSpread
+        setSpread(spreadRef.current)
+      }else if(spreadRef.current.owner != player.current){
+        if (player.current in outSpread.assist){
+          outSpread.assist[player.current].push(hand[index])
+        }else{
+          outSpread.assist[player.current] = [hand[index]]
         }
-      } else{
-        return
+      spreadRef.current=outSpread
+      setSpread(spreadRef.current)
+      }
+    }else{
+      if (outSpread.owner == ''){
+        return //not sure what to do here
+      }else if(outSpread.owner == player.current){
+        const index = outSpread.cards.findIndex(item => item.data._id === name);
+        if (index !== -1) {
+          outSpread.cards.splice(index, 1);
+        }
+      }else if(spreadRef.current.owner != player.current){
+        if (player.current in outSpread.assist){
+          const index = outSpread.assist[player.current].findIndex(item => item.data._id === name);
+          if (index !== -1) {
+            outSpread.assist[player.current].splice(index, 1);
+          }
+        }else{
+          return
+        }
       }
     }
-  }
-      let changes = metadata.current
+    let changes = metadata.current
     changes.spread = {owner:spreadRef.current.owner,cards:spreadRef.current.cards,assist:spreadRef.current.assist}
     setOBRMetadata({changes:changes})
-}
+  }
   const resetSpread = async () =>{
     let changes = metadata.current
     if (metadata.current.spread.owner == player.current){
@@ -187,35 +270,53 @@ function App() {
     spreadRef.current=metadata.current.spread
     setSpread(changes.spread)
     
+    // reset selected
+    let newHand:any[] = []
+    for(let card of hand){
+      card.display.selected=false
+      newHand.push(card)
     }
-  const showSpread = async () =>{
-    spreadRef.current=metadata.current.spread
-    let spreadShowCards = await renderCards(spreadRef.current.cards)
-    let spreadShowAssist:any[] = []
-    for(let key in spreadRef.current.assist){
-      let outCards = await renderCards(spreadRef.current.assist[key])
-      spreadShowAssist.push(outCards)
+    setHand(newHand)
+  }
+  const updateDeck= async () =>{
+    console.log(deckRef.current.hand)
+    await renderCards()
+    for (let index in handRenderRef.current){
+      if (isCardProps(handRenderRef.current[index])){
+        hand.push(handRenderRef.current[index])
+      }
     }
-    let spreadShow:any = {owner:spreadRef.current.owner,cards:spreadShowCards,assists:spreadShowAssist}
-  setSpread(spreadShow)
+    useDatabase.updatePlayerDeck(player.current,deckRef.current)
   }
 
 //run initialization process
   useEffect(() => {
     Init()
   },[]);
+  
+
 
 useEffect(()=>{
   setSpread(metadata.current.spread)
-  console.log(`metadata Refresh:${metadata.current.spread}`)
+  let val = spread.cards.reduce((acc, card) => {
+    return acc + (card.data.value)
+  },0)
+  for(let each in spread.assist){
+  val = val + spread.assist[each].reduce((acc,card)=>{
+    return acc + 1},0)
+  }
+  setSpreadValue(val)
 },[displayMetadata])
 
+
+
   return (
-    <div className='main-container'>
-      <div className='spread-container'><Spread owner={spread.owner} cards={spread.cards} assist={spread.assist}/></div>
-      <div className='hand-container'> <Hand cards={hand} onCardClick={addToSPread} /> </div>
-      <div className='controls-container'><button onClick={drawCards}>draw</button><button onClick={resetSpread}>clear</button> </div>
-    </div>
+   <div className='main-container'>
+        <div className='value-container'><Valuecomponent value={displayValue} /></div>
+        <div className='spread-container'><Spread owner={spread.owner} cards={spread.cards} assist={spread.assist}/></div>
+        <div className='hand-container'> <Hand cards={hand} onCardClick={toggleCard} /> </div>
+        <div className='controls-container'><button onClick={() =>drawCards(1)}>draw</button> <button onClick={()=>discardSelected()}> discard</button> <button onClick={resetSpread}>clear</button> </div>
+      </div>
   )
 }
 
