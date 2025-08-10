@@ -33,4 +33,7 @@ The Server:
 - in the terminal output you will see regular messages that say "🔗 add to Owkbear Rodeo extension with:" use that url to add the extention to owlbear and load it into a room like normal
 - if you're just running it locally than you can ignore the tunnul and just use http://localhost:5173/manifest.json
 - up in the top left you will see a bar wiht a few symbols in it, click on the one that looks like a triangle and it will open a panel
-- click draw and it will give you a hand of cards click then to add them to the current spread, click them again to remove them from the spread. 
+- click draw and it will give you a hand of cards click then to add them to the current spread, click them again to remove them from the spread.
+
+# More
+There is a bynch more stuff I want to do with thsi but its due now so this main branch is what im turning in for grade I suppose
