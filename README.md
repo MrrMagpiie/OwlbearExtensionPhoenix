@@ -36,4 +36,5 @@ The Server:
 - click draw and it will give you a hand of cards click then to add them to the current spread, click them again to remove them from the spread.
 
 # More
+I do not own the rights to the assets for this game so this repo does not include image files nescesary to actually see the cards in action wht you should non the less be able to run the application without them
 There is a bynch more stuff I want to do with thsi but its due now so this main branch is what im turning in for grade I suppose
